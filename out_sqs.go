@@ -145,7 +145,7 @@ func FLBPluginFlushCtx(ctx, data unsafe.Pointer, length C.int, tag *C.char) int 
 		}
 
 		if sqsConf.queueMessageGroupId != "" {
-			sqsRecord.MessageGroupId = aws.String(sqsConf.queueMessageGroupId),
+			sqsRecord.MessageGroupId = aws.String(sqsConf.queueMessageGroupId)
 		}
 
 		if sqsConf.pluginTagAttribute != "" {
